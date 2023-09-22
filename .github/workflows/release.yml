@@ -1,0 +1,45 @@
+name: Build and Release
+
+permissions:
+  contents: write
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    name: 'Build and Release'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Run yarn install
+        uses: borales/actions-yarn@v4
+        with:
+
+          cmd: install
+
+      - name: Run yarn build
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build
+
+      - name: Tar
+        run: |
+          mkdir compress && tar -czvf "compress/build-$(git describe --abbrev=0 --tags).tar.gz" build/
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: compress/*
+          prerelease: false
