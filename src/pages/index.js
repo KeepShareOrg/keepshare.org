@@ -17,6 +17,7 @@ import picCombine from '@site/static/img/pic_combine.webp';
 import picPost from '@site/static/img/pic_post.webp';
 
 import styles from './index.module.css';
+import DmcaFooter from '@site/src/components/DmcaFooter';
 
 function JumpButton(props) {
   const { children, className, native, ...params } = props;
@@ -230,7 +231,10 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title} - File hosting and sharing automation`}
       description="File hosting and sharing automation">
-      <HomeMain />
+      <>
+        <HomeMain />
+        <DmcaFooter />
+      </>
     </Layout>
   );
 }

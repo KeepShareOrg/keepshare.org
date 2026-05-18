@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # What is KeepShare
-KeepShare is a tool for automated and batch file hosting and sharing. With KeepShare, you can easily create a large number of file shares through uploads or links such as DDL/Megent/Ed2K, and automatically keep the shares valid.
+KeepShare is a tool for automated and batch file hosting and sharing. With KeepShare, you can easily create a large number of file shares through uploads or links such as DDL/Magnet/Ed2K, and automatically keep the shares valid.
 
 ## Who is KeepShare mainly suitable for?
 - Webmaster of file download or sharing website

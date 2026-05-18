@@ -69,7 +69,7 @@ const config = {
           },
           {
             type: 'html',
-            value: `<a href="/console">Login in / Sign up</a>`,
+            value: `<a href="/console">Log in / Sign up</a>`,
             position: 'right',
             className: 'login-button',
           },
@@ -81,9 +81,9 @@ const config = {
         ],
       },
       footer: {
-        style: 'light',
+        style: 'dark',
         links: [],
-        copyright: `<div>KeepShare is 100% free, open-source software. Forever. <a href="https://github.com/keepshareorg/keepshare">View on Github</a></div>`,
+        copyright: `<div>KeepShare is 100% free, open-source software. Forever.&nbsp;|&nbsp;<a href="https://github.com/keepshareorg/keepshare">View on Github</a></div>`,
       },
       colorMode: {
         defaultMode: 'light',

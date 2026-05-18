@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KeepShare - Copyright Notice</title>
+  <style>
+    /* ---- Reset & Base ---- */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #fff; color: #1a1a1a; }
+
+    /* ---- Copyright / DMCA Footer Section ---- */
+    .dmca-footer {
+      border-top: 1px solid #e5e7eb;
+      background: #f9fafb;
+      padding: 48px 24px;
+    }
+    .dmca-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .dmca-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .dmca-icon {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      color: #6b7280;
+    }
+    .dmca-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #374151;
+      letter-spacing: 0.01em;
+    }
+    .dmca-body {
+      font-size: 0.875rem;
+      line-height: 1.75;
+      color: #6b7280;
+    }
+    .dmca-body p {
+      margin-bottom: 12px;
+    }
+    .dmca-body p:last-child {
+      margin-bottom: 0;
+    }
+    .dmca-email-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 12px 16px;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      width: fit-content;
+    }
+    .dmca-email-label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #9ca3af;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .dmca-email-link {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #2563eb;
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+    .dmca-email-link:hover {
+      text-decoration: underline;
+    }
+
+    /* ---- Existing site footer ---- */
+    .site-footer {
+      background: #111827;
+      color: #9ca3af;
+      padding: 20px 24px;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+    .site-footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!--
+    ================================================================
+    NOTE TO DEVELOPER:
+    Insert the <dmca-footer> section below at the very end of your
+    existing page body, just before the closing </body> tag.
+    The section after the horizontal rule shows only the new code.
+    ================================================================
+  -->
+
+  <!-- ============================================================
+       EXISTING SITE CONTENT (represented here for context)
+       ============================================================ -->
+  <div style="padding:40px 24px;max-width:900px;margin:0 auto;text-align:center;color:#6b7280;font-size:0.95rem;">
+    <p>↑ Existing KeepShare page content above this line ↑</p>
+    <p style="margin-top:8px;font-size:0.8rem;">(This demo shows only the new footer section to add)</p>
+  </div>
+
+  <hr style="border:none;border-top:1px dashed #d1d5db;margin:0 24px;" />
+
+  <!-- ============================================================
+       NEW: COPYRIGHT / DMCA NOTICE FOOTER — ADD THIS TO YOUR PAGE
+       ============================================================ -->
+  <section class="dmca-footer" id="copyright-notice">
+    <div class="dmca-inner">
+
+      <div class="dmca-header">
+        <!-- Shield / copyright icon -->
+        <svg class="dmca-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <span class="dmca-title">Copyright &amp; Infringement Notice</span>
+      </div>
+
+      <div class="dmca-body">
+        <p>
+          KeepShare is a non-profit, open-source project maintained by independent contributors.
+          It is not a company or commercial entity and has no commercial operations.
+        </p>
+        <p>
+          <strong style="color:#374151;">KeepShare does not host, store, or distribute any files or copyrighted content.</strong>
+          It operates solely as a link-conversion tool: it accepts user-provided links (DDL, Magnet, Ed2K, etc.)
+          and generates corresponding links for third-party hosting services.
+          KeepShare has no access to, or control over, the underlying materials referenced by those links.
+        </p>
+        <p>
+          If you believe content accessible via a third-party platform infringes your rights,
+          please direct your takedown request to the relevant hosting or distribution service.
+          KeepShare does not have the technical ability to remove or disable content on external platforms.
+        </p>
+        <p>
+          For general inquiries regarding copyright concerns, you may contact us at the address below.
+          We appreciate your understanding.
+        </p>
+      </div>
+
+      <div class="dmca-email-row">
+        <span class="dmca-email-label">Contact</span>
+        <a class="dmca-email-link" href="mailto:keepshare.org@gmail.com">keepshare.org@gmail.com</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- ============================================================
+       END OF NEW SECTION
+       ============================================================ -->
+
+  <!-- Existing site footer -->
+  <footer class="site-footer">
+    KeepShare is 100% free, open-source software. Forever. &nbsp;|&nbsp;
+    <a href="https://github.com/keepshareorg/keepshare">View on GitHub</a>
+  </footer>
+
+</body>
+</html>

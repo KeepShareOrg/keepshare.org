@@ -1,0 +1,82 @@
+.dmcaFooter {
+  border-top: 1px solid #e5e7eb;
+  background: #f9fafb;
+  padding: 48px 24px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.dmcaInner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.dmcaHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dmcaIcon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: #6b7280;
+}
+
+.dmcaTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  letter-spacing: 0.01em;
+}
+
+.dmcaBody {
+  font-size: 0.875rem;
+  line-height: 1.75;
+  color: #6b7280;
+}
+
+.dmcaBody p {
+  margin-bottom: 12px;
+}
+
+.dmcaBody p:last-child {
+  margin-bottom: 0;
+}
+
+.dmcaBody strong {
+  color: #374151;
+}
+
+.dmcaEmailRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 12px 16px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.dmcaEmailLabel {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dmcaEmailLink {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.dmcaEmailLink:hover {
+  text-decoration: underline;
+}
