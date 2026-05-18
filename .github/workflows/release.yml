@@ -21,17 +21,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
 
-      - name: Run yarn install
-        uses: borales/actions-yarn@v4
-        with:
+      - name: Install dependencies
+        run: npm ci
 
-          cmd: install
-
-      - name: Run yarn build
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: build
+      - name: Build
+        run: npm run build
 
       - name: Tar
         run: |
